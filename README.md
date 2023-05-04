@@ -147,8 +147,10 @@ Class of threat
 
 jquery, version 1.12.4
 
+
 CVSS 3.x Severity and Metrics: NIST: NVDBase Score: 6.1 MEDIUM
 CNA:  GitHub, Inc.Base Score: 6.9 MEDIUM
+
 CVE-2020-11023
 In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.
 
