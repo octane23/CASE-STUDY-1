@@ -79,6 +79,15 @@ A report regarding this alert is made such as below
 This alert happened because of the cookie set in the website did not implement the SameSite Attribute resulting to cross-site request.
 
 ### CSP <a name="subparagraph5"></a>
+After the scan, OWASP ZAP give alert about the CSP.
+
+![CSP](AssetGithub/CSPfound.png)
+
+A report regarding this alert is made such as below
+
+![Cookie](AssetGithub/Cookiereport.png)
+
+OWASP ZAP prompt this alert due to Content Security Policy (CSP) which is an added layer of security that helps to detect and mitigate certain types of attacks does not use or incorrectly uses a protection mechanism that provides sufficient defense against directed attacks against the product.
 
 ### JS Library <a name="subparagraph6"></a>
 
@@ -103,9 +112,27 @@ After identifying vulnerabilities, we evaluate the vulnerabilities to decide the
 According to https://cwe.mitre.org/ Cookies Without Same Site Attribute is listed as Sensitive Cookie with Improper SameSite Attribute with CWE ID 1275
 Just as stated above this is due to the SameSite attribute for sensitive cookies is not set, or an insecure value is used. The cookie transmission for cross-domain requests is managed by the SameSite property. 'Lax', 'Strict', or 'None' are the three possible values for this characteristic. A website may send a cross-domain POST HTTP request to another website if the 'None' option is provided, and the browser will add cookies to this request. If there are no extra safeguards in place (such as Anti-CSRF tokens), this could result in Cross-Site-Request-Forgery (CSRF) attacks. 
 
+
+
 However this vulnerability is listed as a simple structure, it is not difficult to prevent as it only involve Web Based. Thus this vulnerability is categorized as a low to medium risk due to its low likelihood.
 
+| CIA | Risk    | CVSS    |
+| :---:   | :---: | :---: |
+| Medium | Low   | 0.0   |
+
 ### CSP <a name="subparagraph15"></a>
+
+In https://cwe.mitre.org/ This flaw pertains to three different circumstances. When an application doesn't describe a mechanism to defend against a specific class of attack, it is said to be "missing" a protection mechanism. An "insufficient" protection system may offer some defences, such as those against the most frequent attacks, but it does not offer complete security. Last but not least, a mechanism is considered "ignored" when it is present and being used by the product but has not been implemented by the developer in some code path.
+
+Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.
+
+In the https://www.cvedetails.com/ with ID CVE-2018-5164 they listed Confidentiality Impact as none, Integrity Impact as partial and Availability Impact as none. The vulnerability faced by the report is Cross Site Scripting.
+
+The consequences if this vulnerability is exploit it could affect the technical impact of the access control which is Bypass Protection Mechanism.
+
+| CIA | Risk    | CVSS    |
+| :---:   | :---: | :---: |
+| High | Medium   | 4.3   |
 
 ### JS Library <a name="subparagraph16"></a>
 
@@ -140,6 +167,7 @@ document.cookie = "myOtherCookie=anotherValue; SameSite=Lax; Secure; HttpOnly";
 
 ```
 ### CSP <a name="subparagraph25"></a>
+Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: "Content-Security-Policy" for Chrome 25+, Firefox 23+ and Safari 7+, "X-Content-Security-Policy" for Firefox 4.0+ and Internet Explorer 10+, and "X-WebKit-CSP" for Chrome 14+ and Safari 6+.
 
 ### JS Library <a name="subparagraph26"></a>
 
