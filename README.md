@@ -33,7 +33,7 @@ We scan the website to identify if there are any vulnerabilites in the website.
 
 ### Secured Cookies <a name="subparagraph1"></a>
 After a thorough inspection, there are no alert for Secured cookies but another alert related to cookies was found which is Cookies Without Same Site Attribute.
-
+![](AssetGithub/Cookie found.png)
 
 ## Evaluate the vulnerabilities <a name="paragraph2"></a>
 The second paragraph text
