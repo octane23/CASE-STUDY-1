@@ -1,7 +1,7 @@
 ## Group Name: ADHD
 ## Group Members:
 1. Muhammad Daniel Hakim Bin Mohd Suhaimi 2018451
-2. Muhammad Hazim Bin Nor Aizi
+2. Muhammad Hazim Bin Nor Aizi 2017455
 
 ## Assisgned Tasks for Group Members:
 1. Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) : 
@@ -9,8 +9,8 @@
 3. CSRF                                                                                          : 
 4. Secured Cookies                                                                               : Daniel
 5. CSP                                                                                           : Daniel
-6. JS Library                                                                                    : 
-7. HTTPS implementation(TL/SSL)                                                                  : 
+6. JS Library                                                                                    : Hazim
+7. HTTPS implementation(TL/SSL)                                                                  : Hazim
 8. Cookie Poisoning                                                                              : 
 9. Potential XSS                                                                                 : 
 10. Information Disclosure                                                                       : 
