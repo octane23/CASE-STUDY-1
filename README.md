@@ -15,13 +15,13 @@
 10. Information Disclosure                                                                       : 
 ## Table of Contents
 1. [Introduction](##Introduction)
-2. [Identifythevulnerabilities](##Identify the vulnerabilities)
-3. [Evaluatethevulnerabilities](##Evaluate the vulnerabilities)
-4. [Preventthevulnerabilities](##Prevent the vulnerabilities)
+2. [Identify the vulnerabilities](##Identify the vulnerabilities)
+3. [Evaluate the vulnerabilities](##Evaluate the vulnerabilities)
+4. [Prevent the vulnerabilities](##Prevent the vulnerabilities)
 
 
 ## Introduction
 ## Identify the vulnerabilities
-## Evaluate the vulnerabilities.
+## Evaluate the vulnerabilities
 ## Prevent the vulnerabilities
 ## [Fourth Example](http://www.fourthexample.com) 
