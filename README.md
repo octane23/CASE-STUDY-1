@@ -65,6 +65,7 @@ Here is the scan result:
 ### Server OS and Server-Side Scripting used <a name="subparagraph1"></a>
 
 ### Hash Disclosure <a name="subparagraph2"></a>
+A hash was disclosed by the web server. - Mac OSX salted SHA-1
 
 ### CSRF <a name="subparagraph3"></a>
 
@@ -113,6 +114,10 @@ After identifying vulnerabilities, we evaluate the vulnerabilities to decide the
 ### Server OS and Server-Side Scripting used <a name="subparagraph11"></a>
 
 ### Hash Disclosure <a name="subparagraph12"></a>
+
+CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
+The product exposes sensitive information to an actor that is not explicitly authorized to have access to that information.
+This term is frequently used in vulnerability advisories to describe a consequence or technical impact, for any vulnerability that has a loss of confidentiality. Often, CWE-200 can be misused to represent the loss of confidentiality, even when the mistake - i.e., the weakness - is not directly related to the mishandling of the information itself, such as an out-of-bounds read that accesses sensitive memory contents; here, the out-of-bounds read is the primary weakness, not the disclosure of the memory. In addition, this phrase is also used frequently in policies and legal documents, but it does not refer to any disclosure of security-relevant information.
 
 ### CSRF <a name="subparagraph13"></a>
 
@@ -195,6 +200,7 @@ The last step is for us to suggest a way to prevent the vulnerabilities found fr
 ### Server OS and Server-Side Scripting used <a name="subparagraph21"></a>
 
 ### Hash Disclosure <a name="subparagraph22"></a>
+Ensure that hashes that are used to protect credentials or other resources are not leaked by the web server or database. There is typically no requirement for password hashes to be accessible to the web browser. 
 
 ### CSRF <a name="subparagraph23"></a>
 
