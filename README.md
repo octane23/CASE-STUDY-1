@@ -14,7 +14,8 @@
 7. HTTPS implementation(TL/SSL)                                                                  : Hazim
 8. Cookie Poisoning                                                                              : 
 9. Potential XSS                                                                                 : 
-10. Information Disclosure                                                                       : 
+10. Information Disclosure    
+11. Web Server Allows Password Auto-Completion                                                                   : 
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Identify the vulnerabilities](#paragraph1)
@@ -58,7 +59,7 @@ The objective of this report is to conduct a case study upon the website https:/
 
 
 ## Identify the vulnerabilities <a name="paragraph1"></a>
-We scan the website to identify if there are any vulnerabilites in the website.
+We scan the website nusing ZAP to identify if there are any vulnerabilites in the website.
 Here is the scan result:
 ![Result](AssetGithub/Resultscanned.png)
 
@@ -107,6 +108,17 @@ From our scan we identify a risk or vulnerable JS Library that may be a dangerou
 ### Potential XSS <a name="subparagraph9"></a>
 
 ### Information Disclosure <a name="subparagraph10"></a>
+
+### Web Server Allows Password Auto-Completion 
+The remote web server contains at least one HTML form field that has an input of type 'password' where 'autocomplete' is not set to 'off'.
+
+While this does not represent a risk to this web server per se, it does mean that users who use the affected forms may have their credentials saved in their browsers, which could in turn lead to a loss of confidentiality if any of them use a shared host or if their machine is compromised at some point.
+
+Page : /member/registration/
+Destination Page: /member/registration/
+
+Page : /secure/login/
+Destination Page: /secure/login/
 
 ## Evaluate the vulnerabilities <a name="paragraph2"></a>
 After identifying vulnerabilities, we evaluate the vulnerabilities to decide the degree of risk of each vulnerabilities.
@@ -193,6 +205,10 @@ jQuery JavaScript Library v2.2.4
 
 ### Information Disclosure <a name="subparagraph20"></a>
 
+### Web Server Allows Password Auto-Completion 
+By tenable
+    Severity: Low
+    https://www.tenable.com/plugins/nessus/42057
 
 ## Prevent the vulnerabilities <a name="paragraph3"></a>
 The last step is for us to suggest a way to prevent the vulnerabilities found from the scan.
@@ -228,3 +244,6 @@ The solution for all the outdated library is to stay updated to current version 
 ### Potential XSS <a name="subparagraph29"></a>
 
 ### Information Disclosure <a name="subparagraph30"></a>
+
+### Web Server Allows Password Auto-Completion 
+Add the attribute 'autocomplete=off' to these fields to prevent browsers from caching credentials.
