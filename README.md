@@ -106,7 +106,15 @@ From our scan we identify a risk or vulnerable JS Library that may be a dangerou
 
 ### Cookie Poisoning <a name="subparagraph8"></a>
 
+The site is vulnerable to Cookie Poisoning. Cookie Poisoning, also known as session hijacking is an attack which alters, hijacks or in any way exploit the cookie of a targeted site to steal data and bypass security. 
+
+![Cookie Poisoning](AssetGithub/Cookie Poisoning Scan.png)
+
 ### Potential XSS <a name="subparagraph9"></a>
+
+The site is vulnerable to Cross Site Scripting (XSS). Cross Site Scripting (XSS) is an attack which exploit the vulnerabilities of the functionalities in a website. For example, if there is no Whitelisting (eg: Regular Expression) implemented, an attacker can inject malicious codes to gain access to sensitive information in a database. 
+
+![Potential Cross Site Scripting (XSS)](AssetGithub/Potential XSS.png)
 
 ### Information Disclosure <a name="subparagraph10"></a>
 
