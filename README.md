@@ -56,34 +56,20 @@
     10. [Information Disclosure](#subparagraph30)
 
 ## Introduction<a name="introduction"></a>
-The objective of this report is to conduct a case study upon the website https://www.mbot.org.my/ using OWASP ZAP. We first scan the website using traditional spider to get any alert or vulnerabilities that was assigned for us to check. After that we observe the additional information such as CWE ID and CVE ID.
+The objective of this report is to conduct a case study upon the website https://www.mbot.org.my/ using OWASP ZAP and some other penetrat. We first scan the website using traditional spider to get any alert or vulnerabilities that was assigned for us to check. After that we observe the additional information such as CWE ID and CVE ID.
 
 
 ## Identify the vulnerabilities <a name="paragraph1"></a>
-We scan the website using ZAP to identify if there are any vulnerabilites in the website.
+We scan the website nusing ZAP to identify if there are any vulnerabilites in the website.
 Here is the scan result:
 ![Result](AssetGithub/Resultscanned.png)
 
 ### Server OS and Server-Side Scripting used <a name="subparagraph1"></a>
-Server OS used: Cloudflare
-![image](https://user-images.githubusercontent.com/47686304/236850453-537a44c6-9184-4b44-97a4-5f5fa9ca0c7e.png)
-
-
-
-Server-side Scripting used: ASP.net version 4.0.30319
-![image](https://user-images.githubusercontent.com/47686304/236848065-e52c09ff-ad6b-4cea-ac6c-d77d25f522b7.png)
-
 
 ### Hash Disclosure <a name="subparagraph2"></a>
 A hash was disclosed by the web server. - Mac OSX salted SHA-1
-![image](https://user-images.githubusercontent.com/47686304/236850530-a52c11f8-8b48-48c3-a4e3-af007d4b27f1.png)
-
 
 ### CSRF <a name="subparagraph3"></a>
-Absence of Anti-CSRF cookies
-![image](https://user-images.githubusercontent.com/47686304/236847934-6d5149de-3073-4655-8e40-d29507a407b0.png)
-
-
 
 ### Secured Cookies <a name="subparagraph4"></a>
 After a thorough inspection, there are no alert for Secured cookies but another alert related to cookies was found which is Cookies Without Same Site Attribute.
@@ -218,7 +204,7 @@ CVE-2019-11358
 
     
 Bootstrap v3.3.7
-    CVE-2019-8331
+    ⋅⋅⋅CVE-2019-8331
     CVE-2018-14041
     CVE-2018-14040
     CVE-2018-14042
@@ -242,7 +228,6 @@ jQuery JavaScript Library v2.2.4
 
 ### Information Disclosure <a name="subparagraph20"></a>
 
-
 ### Web Server Allows Password Auto-Completion 
 By tenable
     Severity: Low
@@ -252,34 +237,11 @@ By tenable
 The last step is for us to suggest a way to prevent the vulnerabilities found from the scan.
 
 ### Server OS and Server-Side Scripting used <a name="subparagraph21"></a>
-Configure the server so it will not return those headers.
 
 ### Hash Disclosure <a name="subparagraph22"></a>
 Ensure that hashes that are used to protect credentials or other resources are not leaked by the web server or database. There is typically no requirement for password hashes to be accessible to the web browser. 
 
 ### CSRF <a name="subparagraph23"></a>
-Phase: Architecture and Design
-Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
-For example, use anti-CSRF packages such as the OWASP CSRFGuard.
-
-Phase: Implementation
-Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.
-
-Phase: Architecture and Design
-Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).
-Note that this can be bypassed using XSS.
-
-Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.
-Note that this can be bypassed using XSS.
-
-Use the ESAPI Session Management control.
-This control includes a component for CSRF.
-
-Do not use the GET method for any request that triggers a state change.
-
-Phase: Implementation
-Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.
-
 
 ### Secured Cookies <a name="subparagraph24"></a>
 Set the 'Lax' or 'Strict' options for the SameSite attribute of a sensitive cookie. This gives the browser specific instructions to use this cookie exclusively for requests from the same domain, which offers strong Defence in Depth against CSRF attacks. Cookies are also delivered for top-level cross-domain navigation via HTTP GET, HEAD, OPTIONS, and TRACE methods when the 'Lax' value is in use, but not for other HTTP methods that are more likely to result in state mutation side-effects.
@@ -301,12 +263,10 @@ The solution for all the outdated library is to stay updated to current version 
 ### HTTPS implementation <a name="subparagraph27"></a>
 
 ### Cookie Poisoning <a name="subparagraph28"></a>
-Do not allow user input to control cookie names and values. If some query string parameters must be set in cookie values, be sure to filter out semicolon's that can serve as name/value pair delimiters.
 
 ### Potential XSS <a name="subparagraph29"></a>
 
 ### Information Disclosure <a name="subparagraph30"></a>
-Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.
 
 ### Web Server Allows Password Auto-Completion 
 Add the attribute 'autocomplete=off' to these fields to prevent browsers from caching credentials.
