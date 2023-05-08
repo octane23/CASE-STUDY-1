@@ -220,10 +220,11 @@ CDE ID: 20
 
 Impact:
 
-| Category        |   Technical Impact   |
+| Category        |   Technical Impact                                                                                    |
+| :---:           |:-------------:                                                                                        |
 | Confidentiality |   DoS: Crash, Exit, or Restart; DoS: Resource Consumption (CPU); DoS: Resource Consumption (Memory)   |
-| Integirty       |   Read Memory; Read Files or Directories   |
-| Availabilty     |   Modify Memory; Execute Unauthorized Code or Commands   |
+| Integirty       |   Read Memory; Read Files or Directories                                                              |
+| Availabilty     |   Modify Memory; Execute Unauthorized Code or Commands                                                |
 
 Likelihood of Exploit: High
 
