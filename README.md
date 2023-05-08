@@ -13,9 +13,9 @@
 5. CSP                                                                                           : Daniel
 6. JS Library                                                                                    : Hazim
 7. HTTPS implementation(TL/SSL)                                                                  : Hazim
-8. Cookie Poisoning                                                                              : 
-9. Potential XSS                                                                                 : 
-10. Information Disclosure                                                                       :
+8. Cookie Poisoning                                                                              : Abu Zharr
+9. Potential XSS                                                                                 : Abu Zharr
+10. Information Disclosure                                                                       : Abu Zharr
 11. Web Server Allows Password Auto-Completion                                                   : 
 ## Table of Contents
 1. [Introduction](#introduction)
