@@ -326,11 +326,19 @@ CWE ID: 200
 
 Impact: 
 
-| Category        |   Technical Impact                                                                                    |
-| :---:           |:-------------:                                                                                        |
-| Confidentiality |   DoS: Crash, Exit, or Restart; DoS: Resource Consumption (CPU); DoS: Resource Consumption (Memory)   |
-| Integrity       |   Read Memory; Read Files or Directories                                                              |
-| Availabilty     |   Modify Memory; Execute Unauthorized Code or Commands                                                |
+| Category        |   Technical Impact                |
+| :---:           |:-------------:                    |
+| Confidentiality |   Read Application Data           |
+
+Likelihood of exploitation: High
+
+According to https://cwe.mitre.org/, Information Disclosure is an attack that aims to gain sensitive information to unauthorized users from exposures due to carelessness or unforeseen circumstances. Personal information, system information, network configuration and metadata are among the most commonly targeted information. There have been a lot of cases of Information Disclosure, among them are:
+
+| CWE             |   Description            |  CVSS   |
+| :---:           |:-------------:                |  :---:  |
+| [CVE-2004-2150](https://www.cvedetails.com/cve/CVE-2004-2150/) |   Leaked user information due to descrepancies in error messages       |   5.0    |
+| [CVE-2002-1725](https://www.cve.org/CVERecord?id=CVE-2002-1725)|   Script calls phpinfo(), revealing the system's configuration to users       |  5.0  |
+| [CVE-2003-0190](https://www.cve.org/CVERecord?id=CVE-2003-0190)|   A message telling when a user does not exist allowing attackers to test valid and non-valid usernames    |  5.0  |
 
 ### Web Server Allows Password Auto-Completion 
 By tenable
