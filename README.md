@@ -118,7 +118,11 @@ For this site, the automated scan looks at user-supplied input in query string p
 
 ### Potential XSS <a name="subparagraph9"></a>
 
-The https://www.mbot.org.my/ site is vulnerable to Cross Site Scripting (XSS). Cross Site Scripting (XSS) is an attack which exploit the vulnerabilities of the functionalities in a website. For example, if there is no Whitelisting (eg: Regular Expression) implemented, an attacker can inject malicious codes to gain access to sensitive information in a database or alter the contents of a website.
+There are a total of 981 reports regarding Potential Site Scripting (XSS):
+
+![Potential Cross Site Scripting (XSS)](AssetGithub/PotentialXSSReport.png)
+
+The https://www.mbot.org.my/ site is vulnerable to Cross Site Scripting (XSS). Cross Site Scripting (XSS) is an attack which exploits the vulnerabilities of the functionalities in a website. For example, if there is no Whitelisting (eg: Regular Expression) implemented, an attacker can inject malicious codes to gain access to sensitive information in a database or alter the contents of a website. Among the possible attacks are utilising Javascript code such as <script>alert(cookie)</script> to get the cookie of the website.
 
 ![Potential Cross Site Scripting (XSS)](AssetGithub/PotentialXSS.png)
 
@@ -128,7 +132,7 @@ There are a total of 439 reports regarding Information Disclosure:
 
 ![Information Disclosure](AssetGithub/InformationDisclosureReport.png)
 
-The site is vulnerable 
+The site is vulnerable to Information Disclosure. Information Disclosure happends when the site unintentionally reveals sensitive information to the users, in this case through the comments in the html and javascript code.
 
 ![Information Disclosure](AssetGithub/InformationDisclosure.png)
 
@@ -263,10 +267,13 @@ The solution for all the outdated library is to stay updated to current version 
 ### HTTPS implementation <a name="subparagraph27"></a>
 
 ### Cookie Poisoning <a name="subparagraph28"></a>
+Do not allow user input to control cookie names and values. If some query string parameters must be set in cookie values, be sure to filter out semicolon's that can serve as name/value pair delimiters.
 
 ### Potential XSS <a name="subparagraph29"></a>
-
+Validate all input and sanitize output it before writing to any HTML attributes.
+    
 ### Information Disclosure <a name="subparagraph30"></a>
+Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.
 
 ### Web Server Allows Password Auto-Completion 
 Add the attribute 'autocomplete=off' to these fields to prevent browsers from caching credentials.
