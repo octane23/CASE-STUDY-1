@@ -199,15 +199,15 @@ The consequences if this vulnerability is exploit it could affect the technical 
 |                              | [CVE-2020-11022](https://nvd.nist.gov/vuln/detail/cve-2020-11022) |  |
 |                              | [CVE-2015-9251](https://nvd.nist.gov/vuln/detail/cve-2015-9251)  |  |
 |                              | [CVE-2019-11358](https://nvd.nist.gov/vuln/detail/cve-2019-11358)  |  |
-| Bootstrap v3.3.7             | CVE-2019-8331     |   NIST: NVDBase Score: 6.1 MEDIUM|
-|                              | CVE-2019-11358  | |
-|                              | CVE-2018-14041  |  |
-| moment.js  version : 2.9.0   | CVE-2017-18214   |   NIST: NVDBase Score: 7.5 HIGH |
-|                              | CVE-2022-24785  |  CNA:  GitHub, Inc.Base Score: 7.5 HIGH |
-|jQuery JavaScript Library v2.2.4 |    CVE-2020-11023    |  CVSS 3.x Severity and Metrics: NIST: NVDBase Score: 6.1 MEDIUM / CNA:  GitHub, Inc.Base Score: 6.9 MEDIUM  |
-|                              |  CVE-2020-11022 |  |
-|                              |  CVE-2015-9251|  |
-|                              |  CVE-2019-11358  |  |
+| Bootstrap v3.3.7             | [CVE-2019-8331](https://nvd.nist.gov/vuln/detail/cve-2019-8331)     |   NIST: NVDBase Score: 6.1 MEDIUM|
+|                              | [CVE-2019-11358](https://nvd.nist.gov/vuln/detail/cve-2019-11358)  | |
+|                              | [CVE-2018-14041](https://nvd.nist.gov/vuln/detail/cve-2018-14041)  |  |
+| moment.js  version : 2.9.0   | [CVE-2017-18214](https://nvd.nist.gov/vuln/detail/cve-2017-18214)   |   NIST: NVDBase Score: 7.5 HIGH |
+|                              | [CVE-2022-24785](https://nvd.nist.gov/vuln/detail/cve-2022-24785)  |  CNA:  GitHub, Inc.Base Score: 7.5 HIGH |
+|jQuery JavaScript Library v2.2.4 |   [CVE-2020-11023](https://nvd.nist.gov/vuln/detail/cve-2020-11023) |  CVSS 3.x Severity and Metrics: NIST: NVDBase Score: 6.1 MEDIUM / CNA:  GitHub, Inc.Base Score: 6.9 MEDIUM  |
+|                              |  [CVE-2020-11022](https://nvd.nist.gov/vuln/detail/cve-2020-11022) |  |
+|                              |  [CVE-2015-9251](https://nvd.nist.gov/vuln/detail/cve-2015-9251)|  |
+|                              | [CVE-2019-11358](https://nvd.nist.gov/vuln/detail/cve-2019-11358)  |  |
 
 
 
