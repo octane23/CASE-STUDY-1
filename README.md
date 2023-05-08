@@ -3,19 +3,20 @@
 1. Muhammad Daniel Hakim Bin Mohd Suhaimi 2018451
 2. Muhammad Hazim Bin Nor Aizi 2017455
 3. Abu Zharr Luqman Bin Abdul Aziz 2011733
+4. Muhammad Amiruddin bin Alias 2011349
 
 ## Assisgned Tasks for Group Members:
-1. Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) : 
-2. Hash Disclosure                                                                               : 
-3. CSRF                                                                                          : 
+1. Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) : Amiruddin
+2. Hash Disclosure                                                                               : Amiruddin
+3. CSRF                                                                                          : Amiruddin
 4. Secured Cookies                                                                               : Daniel
 5. CSP                                                                                           : Daniel
 6. JS Library                                                                                    : Hazim
 7. HTTPS implementation(TL/SSL)                                                                  : Hazim
 8. Cookie Poisoning                                                                              : 
 9. Potential XSS                                                                                 : 
-10. Information Disclosure    
-11. Web Server Allows Password Auto-Completion                                                                   : 
+10. Information Disclosure                                                                       :
+11. Web Server Allows Password Auto-Completion                                                   : 
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Identify the vulnerabilities](#paragraph1)
