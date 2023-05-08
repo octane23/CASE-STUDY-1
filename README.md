@@ -202,44 +202,15 @@ The consequences if this vulnerability is exploit it could affect the technical 
 | Bootstrap v3.3.7             | CVE-2019-8331     |   NIST: NVDBase Score: 6.1 MEDIUM|
 |                              | CVE-2019-11358  | |
 |                              | CVE-2018-14041  |  |
-| moment.js  version : 2.9.0   | CVE-2017-18214   |    $|
-|                              | CVE-2022-24785  |  |
-|jQuery JavaScript Library v2.2.4 | are neat      |    $1 |
+| moment.js  version : 2.9.0   | CVE-2017-18214   |   NIST: NVDBase Score: 7.5 HIGH |
+|                              | CVE-2022-24785  |  CNA:  GitHub, Inc.Base Score: 7.5 HIGH |
+|jQuery JavaScript Library v2.2.4 |    CVE-2020-11023    |    |
+|                              |  CVE-2020-11022 |  |
+|                              |  CVE-2015-9251|  |
+|                              |  CVE-2019-11358  |  |
 
 
-jquery, version 1.12.4
 
-
-CVSS 3.x Severity and Metrics: NIST: NVDBase Score: 6.1 MEDIUM
-CNA:  GitHub, Inc.Base Score: 6.9 MEDIUM
-
-CVE-2020-11023
-In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.
-
-CVE-2020-11022  
-In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.
-
-CVE-2015-9251
-
-CVE-2019-11358
-
-    
--Bootstrap v3.3.7
-    CVE-2019-8331
-    ⋅CVE-2018-14041
-    CVE-2018-14040
-    CVE-2018-14042
-    ⋅CVE-2016-10735
-    
-moment.js, version 2.9.0 is vulnerable 
-    CVE-2017-18214
-    CVE-2022-24785
-    
-jQuery JavaScript Library v2.2.4
-    CVE-2020-11023
-    CVE-2020-11022
-    CVE-2015-9251
-    CVE-2019-11358
     
 ### HTTPS implementation <a name="subparagraph17"></a>
 
