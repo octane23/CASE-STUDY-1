@@ -230,7 +230,7 @@ Likelihood of Exploit: High
 
 According to https://cwe.mitre.org/, Input Validation is a part of input processing technique to ensure the input is safe before processing or being used by other components. The other processing techniques available are Input Filtering, Input Neutralization and Input Encoding/Escaping.
 
-CDE-20 is an attack which exploits the improper input validation of a given website.  When a wepsite or web application is not given a proper input validation, an attacker can craft an input which is unexpected by the rest of the application. This vulnerability may result in a much more serious attacks such as Integer Overflow (CWE-190), Eval Injection (CWE-95), XSS (CWE-79) and SQL Injection (CWE-89) and can be seen in the case of CVE-2021-30860, CVE-2021-22205, CVE-2008-3843 and CVE-2006-5525. 
+CDE-20 is an attack which exploits the improper input validation of a given website.  When a wepsite or web application is not given a proper input validation, an attacker can craft an input which is unexpected by the rest of the application. This vulnerability may result in a much more serious attacks such as Integer Overflow (CWE-190), Eval Injection (CWE-95), XSS (CWE-79) and SQL Injection (CWE-89) and can be seen in the case of (CVE-2021-30860)[https://www.cve.org/CVERecord?id=CVE-2021-30860], (CVE-2021-22205)[https://www.cve.org/CVERecord?id=CVE-2021-22205], (CVE-2008-3843)[https://www.cve.org/CVERecord?id=CVE-2008-3843] and (CVE-2006-5525)[https://www.cve.org/CVERecord?id=CVE-2006-5525]. 
 
 In the case of https://mbot.org.my/, the danger lies in the cookie session whereby the language, date and timezone is being used as cookie while the user is allowed an option to input the type of language. 
 
