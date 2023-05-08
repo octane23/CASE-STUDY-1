@@ -106,21 +106,29 @@ From our scan we identify a risk or vulnerable JS Library that may be a dangerou
 
 ### Cookie Poisoning <a name="subparagraph8"></a>
 
-The site is vulnerable to Cookie Poisoning. Cookie Poisoning, also known as session hijacking is an attack which alters, hijacks or in any way exploit the cookie of a targeted site to steal data and bypass security. 
+There are a total of 33 reports regarding Cookie Poisoning:
+
+![Cookie Poisoning](AssetGithub/CookiePoisoningReport.png)
+
+The https://www.mbot.org.my/ site is vulnerable to Cookie Poisoning. Cookie Poisoning, also known as session hijacking is an attack which alters, hijacks or in any way exploit the cookie of a targeted site to steal data and bypass security. 
 
 ![Cookie Poisoning](AssetGithub/CookiePoisoning.png)
 
-For this site, the automated scan looks at user-supplied input in query string parameters and POST data to identify where cookie parameters might be controlled. This is called a cookie poisoning attack, and becomes exploitable when an attacker can manipulate the cookie in various ways. In some cases this will not be exploitable, however, allowing URL parameters to set cookie values is generally considered a bug. An attacker may be able to poison cookie values through POST parameters. To test if this is a more serious issue, you should try resending that request as a GET, with the POST parameter included as a query string parameter. For example:  http://nottrusted.com/page?value=maliciousInput.
+For this site, the automated scan looks at user-supplied input in query string parameters and POST data to identify where cookie parameters might be controlled. This is called a cookie poisoning attack, and becomes exploitable when an attacker can manipulate the cookie in various ways. In some cases this will not be exploitable, however, allowing URL parameters to set cookie values is generally considered a bug. An attacker may be able to poison cookie values through POST parameters.
 
 ### Potential XSS <a name="subparagraph9"></a>
 
-The site is vulnerable to Cross Site Scripting (XSS). Cross Site Scripting (XSS) is an attack which exploit the vulnerabilities of the functionalities in a website. For example, if there is no Whitelisting (eg: Regular Expression) implemented, an attacker can inject malicious codes to gain access to sensitive information in a database or alter the contents of a website.
+The https://www.mbot.org.my/ site is vulnerable to Cross Site Scripting (XSS). Cross Site Scripting (XSS) is an attack which exploit the vulnerabilities of the functionalities in a website. For example, if there is no Whitelisting (eg: Regular Expression) implemented, an attacker can inject malicious codes to gain access to sensitive information in a database or alter the contents of a website.
 
 ![Potential Cross Site Scripting (XSS)](AssetGithub/PotentialXSS.png)
 
 ### Information Disclosure <a name="subparagraph10"></a>
 
+There are a total of 439 reports regarding Information Disclosure:
 
+![Information Disclosure](AssetGithub/InformationDisclosureReport.png)
+
+The site is vulnerable 
 
 ![Information Disclosure](AssetGithub/InformationDisclosure.png)
 
