@@ -340,6 +340,28 @@ According to https://cwe.mitre.org/, Information Disclosure is an attack that ai
 | [CVE-2002-1725](https://www.cve.org/CVERecord?id=CVE-2002-1725)|   Script calls phpinfo(), revealing the system's configuration to users       |  5.0  |
 | [CVE-2003-0190](https://www.cve.org/CVERecord?id=CVE-2003-0190)|   A message telling when a user does not exist allowing attackers to test valid and non-valid usernames    |  5.0  |
 
+In the case of https://www.mbot.org.my/, the site placed comments and use the same patterns in the cookie and other sensitive parts of the code. Eventhough the information are hashed, the attackers can still use attacks such as Use of a One-way Hash Without Salt (CWE-759) attack or the dictionary attack.
+
+Among the detected Information Disclosure(s) are:
+
+Case 1:
+
+```
+
+// The following pattern was used: \bBUG\b and was detected in the element starting with: 
+"<script src="/CMSPages/GetResource.ashx?scriptfile=%7e%2fCMSScripts%2fCustom%2fMBOT%2fie10-viewport-bug-workaround.js" type="tex"
+
+```
+
+Case 2:
+
+```
+
+// The following pattern was used: \bSELECT\b and was detected in the element starting with: 
+"!function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.docu"
+
+```
+
 ### Web Server Allows Password Auto-Completion 
 By tenable
     Severity: Low
