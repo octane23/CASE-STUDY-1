@@ -237,12 +237,11 @@ jQuery JavaScript Library v2.2.4
 ### HTTPS implementation <a name="subparagraph17"></a>
 
 ### Cookie Poisoning <a name="subparagraph18"></a>
-Do not allow user input to control cookie names and values. If some query string parameters must be set in cookie values, be sure to filter out semicolon's that can serve as name/value pair delimiters.
 
 ### Potential XSS <a name="subparagraph19"></a>
 
 ### Information Disclosure <a name="subparagraph20"></a>
-Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.
+
 
 ### Web Server Allows Password Auto-Completion 
 By tenable
@@ -302,10 +301,12 @@ The solution for all the outdated library is to stay updated to current version 
 ### HTTPS implementation <a name="subparagraph27"></a>
 
 ### Cookie Poisoning <a name="subparagraph28"></a>
+Do not allow user input to control cookie names and values. If some query string parameters must be set in cookie values, be sure to filter out semicolon's that can serve as name/value pair delimiters.
 
 ### Potential XSS <a name="subparagraph29"></a>
 
 ### Information Disclosure <a name="subparagraph30"></a>
+Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.
 
 ### Web Server Allows Password Auto-Completion 
 Add the attribute 'autocomplete=off' to these fields to prevent browsers from caching credentials.
