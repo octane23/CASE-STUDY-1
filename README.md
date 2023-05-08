@@ -7,7 +7,7 @@
 
 ## Assisgned Tasks for Group Members:
 1. Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) : Amiruddin
-2. Hash Disclosure                                                                               : Amiruddin
+2. Hash Disclosure                                                                               : Amiruddin/Hazim
 3. CSRF                                                                                          : Amiruddin
 4. Secured Cookies                                                                               : Daniel
 5. CSP                                                                                           : Daniel
@@ -16,7 +16,7 @@
 8. Cookie Poisoning                                                                              : Abu Zharr
 9. Potential XSS                                                                                 : Abu Zharr
 10. Information Disclosure                                                                       : Abu Zharr
-11. Web Server Allows Password Auto-Completion                                                   : 
+11. Web Server Allows Password Auto-Completion                                                   : Hazim
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Identify the vulnerabilities](#paragraph1)
@@ -97,10 +97,14 @@ OWASP ZAP prompt this alert due to Content Security Policy (CSP) which is an add
 
 From our scan we identify a risk or vulnerable JS Library that may be a dangerous vulnerability for attacker to exploit. Below is the example and the type of Library that is outdated
 
--1.12.4/jquery.min.js
--Bootstrap v3.3.7 
--moment.js  version : 2.9.0
--* jQuery JavaScript Library v2.2.4
+
+|  VULNERABLE JS LIBRARY       | Are           | Cool  |
+| -------------                |:-------------:| -----:|
+|  1.12.4/jquery.min.js        | right-aligned | $1600 |
+| Bootstrap v3.3.7             | centered      |   $12 |
+| moment.js  version : 2.9.0   | are neat      |    $1 |
+|jQuery JavaScript Library v2.2.4 | are neat      |    $1 |
+
  
 ### HTTPS implementation <a name="subparagraph7"></a>
 
