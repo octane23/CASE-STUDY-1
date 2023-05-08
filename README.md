@@ -216,25 +216,25 @@ The consequences if this vulnerability is exploit it could affect the technical 
 
 ### Cookie Poisoning <a name="subparagraph18"></a>
 
-CDE ID: 20
+CWE ID: 20
 
 Impact:
 
 | Category        |   Technical Impact                                                                                    |
 | :---:           |:-------------:                                                                                        |
 | Confidentiality |   DoS: Crash, Exit, or Restart; DoS: Resource Consumption (CPU); DoS: Resource Consumption (Memory)   |
-| Integirty       |   Read Memory; Read Files or Directories                                                              |
+| Integrity       |   Read Memory; Read Files or Directories                                                              |
 | Availabilty     |   Modify Memory; Execute Unauthorized Code or Commands                                                |
 
 Likelihood of Exploit: High
 
-According to https://cwe.mitre.org/, Input Validation is a part of input processing technique to ensure the input is safe before processing or being used by other components. The other processing techniques available are Input Filtering, Input Neutralization and Input Encoding/Escaping.
+According to https://cwe.mitre.org/, Cookie Poisoning is the effect of Improper Input Validation (CWE-20). Input Validation is a part of input processing technique to ensure the input is safe before processing or being used by other components. The other processing techniques available are Input Filtering, Input Neutralization and Input Encoding/Escaping.
 
-CDE-20 is an attack which exploits the improper input validation of a given website.  When a wepsite or web application is not given a proper input validation, an attacker can craft an input which is unexpected by the rest of the application. This vulnerability may result in a much more serious attacks such as Integer Overflow (CWE-190), Eval Injection (CWE-95), XSS (CWE-79) and SQL Injection (CWE-89) and can be seen in the case of [CVE-2021-30860](https://www.cve.org/CVERecord?id=CVE-2021-30860), [CVE-2021-22205](https://www.cve.org/CVERecord?id=CVE-2021-22205), [CVE-2008-3843](https://www.cve.org/CVERecord?id=CVE-2008-3843) and [CVE-2006-5525](https://www.cve.org/CVERecord?id=CVE-2006-5525). 
+CWE-20 is an attack which exploits the improper input validation of a given website.  When a wepsite or web application is not given a proper input validation, an attacker can craft an input which is unexpected by the rest of the application. This vulnerability may result in a much more serious attacks such as Integer Overflow (CWE-190), Eval Injection (CWE-95), XSS (CWE-79) and SQL Injection (CWE-89) and can be seen in the case of [CVE-2021-30860](https://www.cve.org/CVERecord?id=CVE-2021-30860), [CVE-2021-22205](https://www.cve.org/CVERecord?id=CVE-2021-22205), [CVE-2008-3843](https://www.cve.org/CVERecord?id=CVE-2008-3843) and [CVE-2006-5525](https://www.cve.org/CVERecord?id=CVE-2006-5525). 
 
-In the case of https://mbot.org.my/, the danger lies in the cookie session whereby the language, date and timezone is being used as cookie while the user is allowed an option to input the type of language. 
+In the case of https://mbot.org.my/, the danger lies in the cookie session whereby the language, date and timezone is being used as cookie while the user is allowed an option to input the type of language. The user's input is not being given proper sanitization hence exposing it to cookie poisoning/session hijacking.
 
-Part of the vulnerability in the code:
+Vulnerability in the code:
 
 ```
 // Website uses language and local timezone as cookie
@@ -247,7 +247,31 @@ lng=en-US
 
 ### Potential XSS <a name="subparagraph19"></a>
 
+CWE ID: 79
+
+Impact:
+
+| Category                                                     |   Technical Impact                                                                               |
+| :---:                                                        |:-------------:                                                                                   |
+| Confidentiality, Access Control                              |   Bypass Protection Mechanism; Read Application Data                                             |
+| Confidentiality, Integrity, Availability                     |   Execute Unauthorized Code or Commands                                                          |
+| Confidentiality, Integrity, Availability, Access Control     |   Execute Unauthorized Code or Commands; Bypass Protection Mechanism; Read Application Data      |
+
+Likelihood of exploit: High
+
+According to https://cwe.mitre.org/, 
+
 ### Information Disclosure <a name="subparagraph20"></a>
+
+CWE ID: 200
+
+Impact: 
+
+| Category        |   Technical Impact                                                                                    |
+| :---:           |:-------------:                                                                                        |
+| Confidentiality |   DoS: Crash, Exit, or Restart; DoS: Resource Consumption (CPU); DoS: Resource Consumption (Memory)   |
+| Integrity       |   Read Memory; Read Files or Directories                                                              |
+| Availabilty     |   Modify Memory; Execute Unauthorized Code or Commands                                                |
 
 ### Web Server Allows Password Auto-Completion 
 By tenable
