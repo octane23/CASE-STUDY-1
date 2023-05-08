@@ -132,7 +132,7 @@ The https://www.mbot.org.my/ site is vulnerable to Cross Site Scripting (XSS). C
 
 ### Information Disclosure <a name="subparagraph10"></a>
 
-There are a total of 439 reports regarding Information Disclosure:
+There are a total of 517 reports regarding Information Disclosure:
 
 ![Information Disclosure](AssetGithub/InformationDisclosureReport.png)
 
