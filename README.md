@@ -259,7 +259,66 @@ Impact:
 
 Likelihood of exploit: High
 
-According to https://cwe.mitre.org/, 
+According to https://cwe.mitre.org/, Cross Site Scripting (XSS) occurs when an attacker utilise the web browser to inject malicious code, which will then either be reflected by the browser or stored in the server.
+
+There are three main types of Cross Site Scripting (XSS):
+
+1.  Reflected XSS: In this type of attack, the injected code is reflected back to the user in the response of the web page. This typically occurs when user input is not properly sanitized or validated by the server. Example of Reflected XSS: [CVE-2021-25926](https://www.cve.org/CVERecord?id=CVE-2021-25926) with a CVSS score of 6.1.
+
+2. Stored XSS: In this type of attack, the injected code is stored on the server and is served to every user who views the affected page. This can happen when user input is not properly sanitized or validated and is saved on the server. Example of Stored XSS: [CVE-2017-0017](https://www.cvedetails.com/cve/CVE-2017-0017/) with a CVSS score of 4.3.
+
+3. DOM-based XSS: In this type of attack, the vulnerability exists in the client-side code of the web page, typically in JavaScript. The injected code is not sent to the server, but is executed in the victim's browser when a certain event is triggered, such as clicking on a link or submitting a form. This type of XSS is often more difficult to detect and prevent. Example of DOM-based XSS: [CVE-2000-1053](https://www.cvedetails.com/cve/CVE-2000-1053/) with a CVSS score of 10.0.
+
+In the case of https://www.mbot.org.my/, the XSS is originated from User Controllable HTML Elemets Attribute in the coding section. Among them are:
+
+Case 1:
+
+```
+
+// URL: https://www.mbot.org.my/search/?searchmode&searchtext=ZAP
+
+// Appears to include user input in: 
+a(n) [input] tag [value] attribute 
+
+// The user input found was:
+searchtext=ZAP
+
+// The user-controlled value was:
+zap
+
+```
+
+Case 2:
+
+```
+// URL: https://www.mbot.org.my/member/registration/?at=Graduate%20Technologist
+
+// Appears to include user input in: 
+a(n) [option] tag [value] attribute 
+
+// The user input found was:
+at=Graduate Technologist
+
+// The user-controlled value was:
+graduate technologist
+
+```
+
+Case 3:
+
+```
+// URL: https://www.mbot.org.my/500/?aspxerrorpath=%2fCMSPages%2fPortalTemplate.aspx
+
+// Appears to include user input in: 
+a(n) [input] tag [value] attribute 
+
+// The user input found was:
+__VIEWSTATEGENERATOR=A5343185
+
+// The user-controlled value was:
+a5343185
+
+```
 
 ### Information Disclosure <a name="subparagraph20"></a>
 
