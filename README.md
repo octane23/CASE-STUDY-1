@@ -138,10 +138,13 @@ The https://www.mbot.org.my/ site is vulnerable to Cross Site Scripting (XSS). C
 
 ### Information Disclosure <a name="subparagraph10"></a>
 
-There are a total of 1090 reports regarding Information Disclosure:
+There are a total of 439 reports regarding Information Disclosure:
 
-![image](https://user-images.githubusercontent.com/47686304/236851948-303c84ea-293c-4b1f-809d-fac1e0ed1193.png)
+![Information Disclosure](AssetGithub/InformationDisclosureReport.png)
 
+The site is vulnerable 
+
+![Information Disclosure](AssetGithub/InformationDisclosure.png)
 
 ### Web Server Allows Password Auto-Completion 
 The remote web server contains at least one HTML form field that has an input of type 'password' where 'autocomplete' is not set to 'off'.
@@ -297,6 +300,12 @@ Ensure that your web server, application server, load balancer, etc. is configur
 ### JS Library <a name="subparagraph26"></a>
 The solution for all the outdated library is to stay updated to current version where it is patched to current security measure
 ### HTTPS implementation <a name="subparagraph27"></a>
+
+### Cookie Poisoning <a name="subparagraph28"></a>
+
+### Potential XSS <a name="subparagraph29"></a>
+
+### Information Disclosure <a name="subparagraph30"></a>
 
 ### Web Server Allows Password Auto-Completion 
 Add the attribute 'autocomplete=off' to these fields to prevent browsers from caching credentials.
