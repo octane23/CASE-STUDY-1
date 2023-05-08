@@ -60,16 +60,26 @@ The objective of this report is to conduct a case study upon the website https:/
 
 
 ## Identify the vulnerabilities <a name="paragraph1"></a>
-We scan the website nusing ZAP to identify if there are any vulnerabilites in the website.
+We scan the website using ZAP to identify if there are any vulnerabilites in the website.
 Here is the scan result:
 ![Result](AssetGithub/Resultscanned.png)
 
 ### Server OS and Server-Side Scripting used <a name="subparagraph1"></a>
+Server OS used: Cloudflare
+
+
+Server-side Scripting used: ASP.net version 4.0.30319
+![image](https://user-images.githubusercontent.com/47686304/236848065-e52c09ff-ad6b-4cea-ac6c-d77d25f522b7.png)
+
 
 ### Hash Disclosure <a name="subparagraph2"></a>
 A hash was disclosed by the web server. - Mac OSX salted SHA-1
 
 ### CSRF <a name="subparagraph3"></a>
+Absence of Anti-CSRF cookies
+![image](https://user-images.githubusercontent.com/47686304/236847934-6d5149de-3073-4655-8e40-d29507a407b0.png)
+
+
 
 ### Secured Cookies <a name="subparagraph4"></a>
 After a thorough inspection, there are no alert for Secured cookies but another alert related to cookies was found which is Cookies Without Same Site Attribute.
