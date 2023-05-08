@@ -98,12 +98,12 @@ OWASP ZAP prompt this alert due to Content Security Policy (CSP) which is an add
 From our scan we identify a risk or vulnerable JS Library that may be a dangerous vulnerability for attacker to exploit. Below is the example and the type of Library that is outdated
 
 
-|  VULNERABLE JS LIBRARY       | Are           | Cool  |
-| -------------                |:-------------:| -----:|
-|  1.12.4/jquery.min.js        | right-aligned | $1600 |
-| Bootstrap v3.3.7             | centered      |   $12 |
-| moment.js  version : 2.9.0   | are neat      |    $1 |
-|jQuery JavaScript Library v2.2.4 | are neat      |    $1 |
+|  VULNERABLE JS LIBRARY       |
+| -------------                |
+|  1.12.4/jquery.min.js        | 
+| Bootstrap v3.3.7             | 
+| moment.js  version : 2.9.0   | 
+|jQuery JavaScript Library v2.2.4 | 
 
  
 ### HTTPS implementation <a name="subparagraph7"></a>
@@ -192,7 +192,20 @@ The consequences if this vulnerability is exploit it could affect the technical 
 
 ### JS Library <a name="subparagraph16"></a>
  
-Class of threat
+ 
+|  VULNERABLE JS LIBRARY       | CLASS OF THREAT         | LEVEL OF RISK |
+| -------------                |:-------------:| -----:|
+| jquery, version 1.12.4       | CVE-2020-11023 | CVSS 3.x Severity and Metrics: NIST: NVDBase Score: 6.1 MEDIUM / CNA:  GitHub, Inc.Base Score: 6.9 MEDIUM |
+|                              | CVE-2020-11022  |  |
+|                              | CVE-2015-9251  |  |
+|                              | CVE-2019-11358  |  |
+| Bootstrap v3.3.7             | CVE-2019-8331     |   NIST: NVDBase Score: 6.1 MEDIUM|
+|                              | CVE-2019-11358  | |
+|                              | CVE-2018-14041  |  |
+| moment.js  version : 2.9.0   | CVE-2017-18214   |    $|
+|                              | CVE-2022-24785  |  |
+|jQuery JavaScript Library v2.2.4 | are neat      |    $1 |
+
 
 jquery, version 1.12.4
 
@@ -212,11 +225,11 @@ CVE-2019-11358
 
     
 -Bootstrap v3.3.7
-    ⋅⋅*CVE-2019-8331
-    ⋅⋅*CVE-2018-14041
-    ⋅⋅*CVE-2018-14040
-    ⋅⋅*CVE-2018-14042
-    ⋅⋅*CVE-2016-10735
+    CVE-2019-8331
+    ⋅CVE-2018-14041
+    CVE-2018-14040
+    CVE-2018-14042
+    ⋅CVE-2016-10735
     
 moment.js, version 2.9.0 is vulnerable 
     CVE-2017-18214
