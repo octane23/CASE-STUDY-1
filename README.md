@@ -19,7 +19,7 @@
 | 9   | Potential XSS | Abu Zharr   |
 | 10   | Information Disclosure | Abu Zharr   |
 | 11   | Web Server Allows Password Auto-Completion | Hazim   |
-| 12   | Setting and prepare md | Daniel   |
+| 12   | Setting and prepare md documentation | Daniel   |
 
 ## Table of Contents
 1. [Introduction](#introduction)
