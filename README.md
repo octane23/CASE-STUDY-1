@@ -215,6 +215,10 @@ However this vulnerability is listed as a simple structure, it is not difficult 
 | :---:   | :---: | :---: |
 | Medium | Low   | 0.0   |
 
+References:
+1. [https://cwe.mitre.org/ CWE ID 1275](https://cwe.mitre.org/data/definitions/1275.html)
+2. [https://www.cvedetails.com/cve/CVE-2022-35284/](https://www.cvedetails.com/cve/CVE-2022-35284/)
+3. 
 ### CSP <a name="subparagraph15"></a>
 
 In https://cwe.mitre.org/ This flaw pertains to three different circumstances. When an application doesn't describe a mechanism to defend against a specific class of attack, it is said to be "missing" a protection mechanism. An "insufficient" protection system may offer some defences, such as those against the most frequent attacks, but it does not offer complete security. Last but not least, a mechanism is considered "ignored" when it is present and being used by the product but has not been implemented by the developer in some code path.
@@ -228,6 +232,10 @@ The consequences if this vulnerability is exploit it could affect the technical 
 | CIA | Risk    | CVSS    |
 | :---:   | :---: | :---: |
 | High | Medium   | 4.3   |
+
+References:
+1. [https://cwe.mitre.org/data/definitions/693.html](https://cwe.mitre.org/data/definitions/693.html)
+2. [https://www.cvedetails.com/cve/CVE-2018-5164/](https://www.cvedetails.com/cve/CVE-2018-5164/)
 
 ### JS Library <a name="subparagraph16"></a>
  
