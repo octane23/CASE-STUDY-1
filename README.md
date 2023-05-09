@@ -241,6 +241,8 @@ Impact:
 
 Likelihood of Exploit: High
 
+Risk: Low
+
 According to https://cwe.mitre.org/, Cookie Poisoning is the effect of Improper Input Validation (CWE-20). Input Validation is a part of input processing technique to ensure the input is safe before processing or being used by other components. The other processing techniques available are Input Filtering, Input Neutralization and Input Encoding/Escaping.
 
 CWE-20 is an attack which exploits the improper input validation of a given website.  When a wepsite or web application is not given a proper input validation, an attacker can craft an input which is unexpected by the rest of the application. This vulnerability may result in a much more serious attacks such as Integer Overflow (CWE-190), Eval Injection (CWE-95), XSS (CWE-79) and SQL Injection (CWE-89) and can be seen in the case of [CVE-2021-30860](https://www.cve.org/CVERecord?id=CVE-2021-30860), [CVE-2021-22205](https://www.cve.org/CVERecord?id=CVE-2021-22205), [CVE-2008-3843](https://www.cve.org/CVERecord?id=CVE-2008-3843) and [CVE-2006-5525](https://www.cve.org/CVERecord?id=CVE-2006-5525). 
@@ -271,6 +273,8 @@ Impact:
 | Confidentiality, Integrity, Availability, Access Control     |   Execute Unauthorized Code or Commands; Bypass Protection Mechanism; Read Application Data      |
 
 Likelihood of exploit: High
+
+Risk: Low
 
 According to https://cwe.mitre.org/, Cross Site Scripting (XSS) occurs when an attacker utilise the web browser to inject malicious code, which will then either be reflected by the browser or stored in the server.
 
@@ -344,6 +348,8 @@ Impact:
 | Confidentiality |   Read Application Data           |
 
 Likelihood of exploitation: High
+
+Risk: Low
 
 According to https://cwe.mitre.org/, Information Disclosure is an attack that aims to gain sensitive information to unauthorized users from exposures due to carelessness or unforeseen circumstances. Personal information, system information, network configuration and metadata are among the most commonly targeted information. There have been a lot of cases of Information Disclosure, among them are:
 
