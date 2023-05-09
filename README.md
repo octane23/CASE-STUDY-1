@@ -6,10 +6,10 @@
 4. Muhammad Amiruddin bin Alias 2011349
 
 ## Assisgned Tasks for Group Members:
-| CIA | Risk    |
+| Task | Assigned    |
 | :---:   | :---: |
-| Medium | Low   |
-1. Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) : Amiruddin
+| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
+1.  : 
 2. Hash Disclosure                                                                               : Amiruddin/Hazim
 3. CSRF                                                                                          : Amiruddin
 4. Secured Cookies                                                                               : Daniel
