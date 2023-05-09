@@ -34,6 +34,7 @@
     8. [Cookie Poisoning](#subparagraph8)
     9. [Potential XSS](#subparagraph9)
     10. [Information Disclosure](#subparagraph10)
+    11. [Web Server Allows Password Auto-Completion](#subparagraph31)
 
 3. [Evaluate the vulnerabilities](#paragraph2)
     1. [Server OS and Server-Side Scripting used](#subparagraph11)
@@ -46,6 +47,7 @@
     8. [Cookie Poisoning](#subparagraph18)
     9. [Potential XSS](#subparagraph19)
     10. [Information Disclosure](#subparagraph20)
+    11. [Web Server Allows Password Auto-Completion](#subparagraph32)
 
 4. [Prevent the vulnerabilities](#paragraph3)
     1. [Server OS and Server-Side Scripting used](#subparagraph21)
@@ -58,6 +60,7 @@
     8. [Cookie Poisoning](#subparagraph28)
     9. [Potential XSS](#subparagraph29)
     10. [Information Disclosure](#subparagraph30)
+    11. [Web Server Allows Password Auto-Completion](#subparagraph33)
 
 ## Introduction<a name="introduction"></a>
 The objective of this report is to conduct a case study upon the website https://www.mbot.org.my/ using OWASP ZAP and some other penetrat. We first scan the website using traditional spider to get any alert or vulnerabilities that was assigned for us to check. After that we observe the additional information such as CWE ID and CVE ID.
@@ -144,7 +147,7 @@ The site is vulnerable to Information Disclosure. Information Disclosure happend
 
 ![Information Disclosure](AssetGithub/InformationDisclosure.png)
 
-### Web Server Allows Password Auto-Completion 
+### Web Server Allows Password Auto-Completion <a name="subparagraph31"></a>
 The remote web server contains at least one HTML form field that has an input of type 'password' where 'autocomplete' is not set to 'off'.
 
 While this does not represent a risk to this web server per se, it does mean that users who use the affected forms may have their credentials saved in their browsers, which could in turn lead to a loss of confidentiality if any of them use a shared host or if their machine is compromised at some point.
@@ -372,7 +375,7 @@ Case 2:
 
 ```
 
-### Web Server Allows Password Auto-Completion 
+### Web Server Allows Password Auto-Completion <a name="subparagraph32"></a>
 By tenable
     Severity: Low
     https://www.tenable.com/plugins/nessus/42057
@@ -415,5 +418,5 @@ Validate all input and sanitize output it before writing to any HTML attributes.
 ### Information Disclosure <a name="subparagraph30"></a>
 Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.
 
-### Web Server Allows Password Auto-Completion 
+### Web Server Allows Password Auto-Completion <a name="subparagraph33"></a>
 Add the attribute 'autocomplete=off' to these fields to prevent browsers from caching credentials.
