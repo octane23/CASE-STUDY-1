@@ -14,7 +14,7 @@
 | 4   | Secured Cookies | Daniel   |
 | 5   | CSP | Daniel   |
 | 6   | JS Library | Hazim   |
-| 7   | HTTPS implementation(TL/SSL) | Hazim   |
+| 7   | HTTPS implementation(TL/SSL) | Hazim/Daniel   |
 | 8   | Cookie Poisoning | Abu Zharr   |
 | 9   | Potential XSS | Abu Zharr   |
 | 10   | Information Disclosure | Abu Zharr   |
