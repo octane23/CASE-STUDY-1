@@ -5,6 +5,13 @@
 3. Abu Zharr Luqman Bin Abdul Aziz 2011733
 4. Muhammad Amiruddin bin Alias 2011349
 
+## Tools used
+ZAP
+Nessus
+SSL Server Test(website)
+DnsChecker(website)
+Dirbuster
+
 ## Assisgned Tasks for Group Members:
 | No. | Task | Assigned    |
 | :---:   | :---:   | :---: |
