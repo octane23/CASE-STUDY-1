@@ -6,32 +6,21 @@
 4. Muhammad Amiruddin bin Alias 2011349
 
 ## Assisgned Tasks for Group Members:
-| Task | Assigned    |
-| :---:   | :---: |
-| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
-| Hash Disclosure | Amiruddin/Hazim   |
-| CSRF | Amiruddin   |
-| Secured Cookies | Daniel   |
-| CSP | Daniel   |
-| JS Library | Hazim   |
-| HTTPS implementation(TL/SSL) | Hazim   |
-| Cookie Poisoning | Abu Zharr   |
-| Potential XSS | Abu Zharr   |
-| Information Disclosure | Abu Zharr   |
-| Web Server Allows Password Auto-Completion | Hazim   |
-| Setting and prepare md | Daniel   |
-1.  : 
-2. Hash Disclosure                                                                               : Amiruddin/Hazim
-3. CSRF                                                                                          : Amiruddin
-4. Secured Cookies                                                                               : Daniel
-5. CSP                                                                                           : Daniel
-6. JS Library                                                                                    : Hazim
-7. HTTPS implementation(TL/SSL)                                                                  : Hazim
-8. Cookie Poisoning                                                                              : Abu Zharr
-9. Potential XSS                                                                                 : Abu Zharr
-10. Information Disclosure                                                                       : Abu Zharr
-11. Web Server Allows Password Auto-Completion                                                   : Hazim
-12. Setting and prepare md                                                                       : Daniel
+| No. | Task | Assigned    |
+| :---:   | :---:   | :---: |
+| 1   | Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
+| 2   | Hash Disclosure | Amiruddin/Hazim   |
+| 3   | CSRF | Amiruddin   |
+| 4   | Secured Cookies | Daniel   |
+| 5   | CSP | Daniel   |
+| 6   | JS Library | Hazim   |
+| 7   | HTTPS implementation(TL/SSL) | Hazim   |
+| 8   | Cookie Poisoning | Abu Zharr   |
+| 9   | Potential XSS | Abu Zharr   |
+| 10   | Information Disclosure | Abu Zharr   |
+| 11   | Web Server Allows Password Auto-Completion | Hazim   |
+| 12   | Setting and prepare md | Daniel   |
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Identify the vulnerabilities](#paragraph1)
