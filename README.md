@@ -6,11 +6,11 @@
 4. Muhammad Amiruddin bin Alias 2011349
 
 ## Tools used
-ZAP
-Nessus
-SSL Server Test(website)
-DnsChecker(website)
-Dirbuster
+1. ZAP
+2. Nessus
+3. SSL Server Test(website)
+4. DnsChecker(website)
+5. Dirbuster
 
 ## Assisgned Tasks for Group Members:
 | No. | Task | Assigned    |
