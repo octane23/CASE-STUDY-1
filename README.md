@@ -72,6 +72,12 @@ Here is the scan result:
 ![Result](AssetGithub/Resultscanned.png)
 
 ### Server OS and Server-Side Scripting used <a name="subparagraph1"></a>
+Server OS used: Cloudflare
+![image](https://user-images.githubusercontent.com/47686304/236850453-537a44c6-9184-4b44-97a4-5f5fa9ca0c7e.png)
+
+Server-side Scripting used: ASP.net version 4.0.30319
+![WhatsApp Image 2023-05-08 at 03 48 49](https://user-images.githubusercontent.com/47686304/237005825-f747b9ed-65af-41a6-a150-b3a3c58547b8.jpg)
+
 
 ### Hash Disclosure <a name="subparagraph2"></a>
 A hash was disclosed by the web server. - Mac OSX salted SHA-1
