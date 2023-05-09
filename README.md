@@ -174,6 +174,7 @@ Destination Page: /secure/login/
 After identifying vulnerabilities, we evaluate the vulnerabilities to decide the degree of risk of each vulnerabilities.
 
 ### Server OS and Server-Side Scripting used <a name="subparagraph11"></a>
+The X-Powered-By header describes the technologies used by the webserver. This information exposes the server to attackers. Using the information in this header, attackers can find vulnerabilities easier.
 
 ### Hash Disclosure <a name="subparagraph12"></a>
 
@@ -414,6 +415,7 @@ By tenable
 The last step is for us to suggest a way to prevent the vulnerabilities found from the scan.
 
 ### Server OS and Server-Side Scripting used <a name="subparagraph21"></a>
+Ensure that your web server, application server, load balancer, etc. is configured to suppress "X-Powered-By" headers.
 
 ### Hash Disclosure <a name="subparagraph22"></a>
 Ensure that hashes that are used to protect credentials or other resources are not leaked by the web server or database. There is typically no requirement for password hashes to be accessible to the web browser. 
