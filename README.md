@@ -9,6 +9,15 @@
 | Task | Assigned    |
 | :---:   | :---: |
 | Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
+| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
+| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
+| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
+| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
+| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
+| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
+| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
+| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
+| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
 1.  : 
 2. Hash Disclosure                                                                               : Amiruddin/Hazim
 3. CSRF                                                                                          : Amiruddin
