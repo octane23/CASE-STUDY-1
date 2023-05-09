@@ -115,6 +115,12 @@ From our scan we identify a risk or vulnerable JS Library that may be a dangerou
  
 ### HTTPS implementation <a name="subparagraph7"></a>
 
+After scan is made, it prompt oot SSL alert
+
+![HTTPS](AssetGithub/SSL.png)
+![HTTPS](AssetGithub/SSL1.png)
+![HTTPS](AssetGithub/SSL2.png)
+
 ### Cookie Poisoning <a name="subparagraph8"></a>
 
 There are a total of 33 reports regarding Cookie Poisoning:
@@ -220,6 +226,24 @@ The consequences if this vulnerability is exploit it could affect the technical 
 
     
 ### HTTPS implementation <a name="subparagraph17"></a>
+
+The grading system ranges from A+ (the highest) to F (the lowest). Here is a general explanation of each grade:
+
+A+ - The SSL/TLS implementation is considered excellent, with no significant security issues.
+
+A - The SSL/TLS implementation is very good, with only minor issues or no known vulnerabilities.
+
+B - The SSL/TLS implementation is good, but has some potential vulnerabilities or weak cipher suites.
+
+C - The SSL/TLS implementation is fair, with significant vulnerabilities or weak cipher suites.
+
+D - The SSL/TLS implementation is poor, with serious vulnerabilities or weak cipher suites that could be exploited.
+
+E - The SSL/TLS implementation is very poor, with extremely serious vulnerabilities or weak cipher suites that are easily exploitable.
+
+F - The SSL/TLS implementation is considered completely insecure and should not be used in any situation.
+
+To achieve an A+ or A grade, a website's SSL/TLS implementation must use strong cryptographic protocols, have a valid certificate, and not have any known vulnerabilities or issues. Websites with lower grades typically have issues such as weak cipher suites, outdated protocols, or other security vulnerabilities that could put users at risk.
 
 ### Cookie Poisoning <a name="subparagraph18"></a>
 
