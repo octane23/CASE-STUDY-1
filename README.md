@@ -9,15 +9,17 @@
 | Task | Assigned    |
 | :---:   | :---: |
 | Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
-| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
-| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
-| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
-| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
-| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
-| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
-| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
-| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
-| Server OS and Server-Side Scripting used(Windows or Linux, PHP or ASP.net or JavaScript, etc) | Amiruddin   |
+| Hash Disclosure | Amiruddin/Hazim   |
+| CSRF | Amiruddin   |
+| Secured Cookies | Daniel   |
+| CSP | Daniel   |
+| JS Library | Hazim   |
+| HTTPS implementation(TL/SSL) | Hazim   |
+| Cookie Poisoning | Abu Zharr   |
+| Potential XSS | Abu Zharr   |
+| Information Disclosure | Abu Zharr   |
+| Web Server Allows Password Auto-Completion | Hazim   |
+| Setting and prepare md | Daniel   |
 1.  : 
 2. Hash Disclosure                                                                               : Amiruddin/Hazim
 3. CSRF                                                                                          : Amiruddin
