@@ -431,7 +431,21 @@ Ensure that your web server, application server, load balancer, etc. is configur
 
 ### JS Library <a name="subparagraph26"></a>
 The solution for all the outdated library is to stay updated to current version where it is patched to current security measure
+
 ### HTTPS implementation <a name="subparagraph27"></a>
+SSL certificate is used to create secured sites but to maximize its security, you need to encrypt all pages of your websites, including all sub-domains.
+
+Another SSL Stripping prevention method is to secure the local network from unauthorized access. Implementing a robust Web Application Firewall (WAF) will prevent malicious actors from gaining access to the local network and extending laterally to set up MitM attacks.
+
+Malicious links listed in forums and sent via spam emails have been the default weapon for attackers for many years. Avoid clicking on emails from somebody you do not recognize.
+
+Public wi-fi hotspots are perfect for SSL Stripping attacks. Avoid insecure wi-fi points.
+
+Another effective way to protect from an SSL stripping attack is manually typing the complete URL in the address bar.
+
+An important line of defense is implementing HSTS (HTTP Strict Transport Security) – a strict policy restricting web browsers from interacting with an insecure HTTPS connection.
+
+In addition to enforcing HSTS and enabling SSL secure connection, businesses need to hire Certificate Management System like Entrust CMS offered by Indusface to monitor and manage certificate lifecycle, public key infrastructure, and certificate validity to prevent bad actors from misusing the certificate.
 
 ### Cookie Poisoning <a name="subparagraph28"></a>
 Do not allow user input to control cookie names and values. If some query string parameters must be set in cookie values, be sure to filter out semicolon's that can serve as name/value pair delimiters.
