@@ -29,7 +29,6 @@
 | 12   | Setting and prepare md documentation | Daniel   |
 
 ## Table of Contents
-## Table of Contents
 | No. | Task |
 | :---:   | :---:   |
 | 1.0   | [Introduction](#introduction)|
