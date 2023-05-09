@@ -514,3 +514,27 @@ Remove all comments that return information that may help an attacker and fix an
 
 ### Web Server Allows Password Auto-Completion <a name="subparagraph33"></a>
 Add the attribute 'autocomplete=off' to these fields to prevent browsers from caching credentials.
+
+### Reference
+
+1. Server OS and Server-Side Scripting:
+
+2. Hash Disclosure
+
+4. CSRF
+
+5. Secured Cookies
+
+6. CSP
+
+7. JS Library
+
+8. HTTPS Implementation (TL,SSL)
+
+9. Cookie Poisoning
+
+10. Potential XSS
+
+11. Information Disclosure
+
+12. Web Server Allows Password Auto-Completion
