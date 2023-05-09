@@ -125,7 +125,6 @@ After scan is made, it prompt oot SSL alert
 
 ![HTTPS](AssetGithub/SSL.png)
 ![HTTPS](AssetGithub/SSL1.png)
-![HTTPS](AssetGithub/SSL2.png)
 
 ### Cookie Poisoning <a name="subparagraph8"></a>
 
